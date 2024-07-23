@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Repl Auth Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Repl Auth Demo</h1>
+    </header>
+
+    <main>
+      <h2>Welcome to our Demo App!</h2>
+      <p>
+        This is a simple demo app to show you how you can use Repl Auth to
+        authenticate users. You'll see a "Login with Replit" button below. Click
+        it to log in and see your user information.
+      </p>
+      <p>
+        <button id="login-button">Login with Replit</button>
+      </p>
+      <div id="user-info">
+        <!-- User information will be displayed here after login -->
+      </div>
+      <script>
+        // This function will be executed when the user logs in
+        window.addEventListener("replit-auth-complete", function () {
+          // Get the user's information from the Replit Auth headers
+          let userId = document.querySelector(
+            'meta[name="replit-user-id"]'
+          ).content;
+          let userName = document.querySelector(
+            'meta[name="replit-user-name"]'
+          ).content;
+          let userRoles = document.querySelector(
+            'meta[name="replit-user-roles"]'
+          ).content;
+
+          // Display the user's information in the "user-info" div
+          document.getElementById("user-info").innerHTML = `
+          <p>Welcome, ${userName}!</p>
+          <p>Your user ID is: ${userId}</p>
+          <p>Your roles are: ${userRoles}</p>
+        `;
+        });
+      </script>
+      <div>
+        <script
+          authed="location.reload()"
+          src="https://auth.util.repl.co/script.js"
+        ></script>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Replit Demo App</p>
+    </footer>
+  </body>
+</html>
