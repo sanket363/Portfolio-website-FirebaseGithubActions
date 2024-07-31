@@ -1,13 +1,12 @@
-# 🚀 Deploying a Simple HTML Application to Firebase Hosting with GitHub Actions
+# 🚀 Deploying Portfolio website to Firebase Hosting with GitHub Actions
 
-This guide will walk you through deploying a simple HTML application to Firebase Hosting using GitHub Actions. Firebase Hosting is a fast, secure, and reliable hosting service for web apps, and GitHub Actions allows for automated deployment whenever changes are pushed to your repository.
+This guide will walk you through deploying a Portfolio website to Firebase Hosting using GitHub Actions. Firebase Hosting is a fast, secure, and reliable hosting service for web apps, and GitHub Actions allows for automated deployment whenever changes are pushed to your repository.
 
 ## 📝 Prerequisites
 
 Before you begin, make sure you have the following:
 
 - 📧 A Google account
-- 🖥️ Node.js and npm installed on your computer
 - 🔧 Firebase CLI installed (`npm install -g firebase-tools`)
 - 🔥 A Firebase project (you can create one at the [Firebase Console](https://console.firebase.google.com/))
 - 🖥️ A GitHub account and repository for your project
@@ -21,7 +20,7 @@ mkdir simple-html-app
 cd simple-html-app
 ```
 
-Create your HTML file (e.g., `index.html`):
+Create your HTML file below is one of the example (e.g., `index.html`):
 
 ```html
 <!DOCTYPE html>
@@ -201,6 +200,6 @@ To update your application, make changes to your files in the `public` directory
 - **View the list of Firebase projects:** `firebase projects:list`
 - **Switch to a different Firebase project:** `firebase use --add`
 
-By following these steps, you can set up and deploy your simple HTML application to Firebase Hosting with automatic deployment using GitHub Actions. If you have any questions or run into issues, please refer to the Firebase documentation or seek help from the Firebase community.
+Following these steps, you can automatically set up and deploy your application to Firebase Hosting using GitHub Actions. If you have any questions or have issues, please refer to the [Firebase documentation](https://firebase.google.com/docs/hosting/github-integration) or seek help from the Firebase community.
 
 ---
