@@ -1,6 +1,6 @@
-# 🚀 Deploying Portfolio website to Firebase Hosting with GitHub Actions
+# 🚀 Deploying sample website to Firebase Hosting with GitHub Actions
 
-This guide will walk you through deploying a Portfolio website to Firebase Hosting using GitHub Actions. Firebase Hosting is a fast, secure, and reliable hosting service for web apps, and GitHub Actions allows for automated deployment whenever changes are pushed to your repository.
+This guide will walk you through deploying a sample website to Firebase Hosting using GitHub Actions. Firebase Hosting is a fast, secure, and reliable hosting service for web apps, and GitHub Actions allows for automated deployment whenever changes are pushed to your repository.
 
 ## 📝 Prerequisites
 
